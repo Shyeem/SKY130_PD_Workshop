@@ -1,0 +1,31 @@
+Working directory is 
+~/Desktop/work/tools/openlane_working_dir/openlane
+ss4
+There are multiple files in the direcotry
+The designs are in design folder
+
+There are 30-40 designs
+We will be doing picorv32a
+ss3
+>Src→ verilog + sdc
+>Config.tcl → bypasses any configurations done to the lane
+	Adds the settings specific to the design
+	Time period is set [this overwrites the default openlane settings]
+How the openlane takes the values
+>Default values in open lane
+>config.tcl
+>Then sku130A_sky130….tcl
+  This is the highest priority one and this will be considered for the design
+
+<ss2>
+%docker
+%./flow.tcl -interactive
+When we do an interactive we do a step by step process
+Without interactive it will run the complete flow without showing
+<ss1>
+
+%prep -design picorv32a
+ss5
+Import all the packages required to run the flow
+
+##the above 3 steps have to be done everytime
