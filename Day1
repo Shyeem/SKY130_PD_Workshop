@@ -8,7 +8,9 @@ There are 30-40 designs
 We will be doing picorv32a
 ss3
 >Src→ verilog + sdc
+ss6
 >Config.tcl → bypasses any configurations done to the lane
+ss7
 	Adds the settings specific to the design
 	Time period is set [this overwrites the default openlane settings]
 How the openlane takes the values
@@ -16,7 +18,7 @@ How the openlane takes the values
 >config.tcl
 >Then sku130A_sky130….tcl
   This is the highest priority one and this will be considered for the design
-
+##add screenshots explaining the config.tcl
 <ss2>
 %docker
 %./flow.tcl -interactive
@@ -26,6 +28,4 @@ Without interactive it will run the complete flow without showing
 
 %prep -design picorv32a
 ss5
-Import all the packages required to run the flow
 
-##the above 3 steps have to be done everytime
